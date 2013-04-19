@@ -1,0 +1,28 @@
+@import "scss/media_queries";
+
+@include mq-mobile('portrait', 'old') {
+}
+
+@include mq-mobile('landscape', 'old') {
+}
+
+@include mq-tablet('portrait', 'old') {
+}
+
+@include mq-tablet('landscape', 'old') {
+}
+
+@include mq-desctop('modern') {
+}
+
+@include mq-desctop('wide') {
+}
+
+@include mq-desctop('hd') {
+}
+
+@include mq-desctop('over') {
+    body {
+        background-color: #000;
+    }
+}
