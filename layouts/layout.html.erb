@@ -24,12 +24,14 @@
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" >
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css">
+    <!--[if lt IE 7]><link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome-ie7.min.css"><![endif]-->
+    <link rel="stylesheet" href="components/fancybox/source/jquery.fancybox.css">
     <link rel="stylesheet" href="css/myStyles.css">
 
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 
 <body class="<%= page_classes %>">
@@ -44,20 +46,6 @@
 
     <%= partial "partials/footer" %>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/vendor/jquery.fancybox.pack.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <script>
-    $(document).ready(function() {
-        $('#carousel').carousel();
-        $('.fancybox').fancybox({padding : 0});
-    });
-    </script>
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
@@ -65,5 +53,7 @@
         g.src='//www.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
+
+    <script data-main="js/main" src="js/vendor/require.js"></script>
 </body>
 </html>
