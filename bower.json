@@ -1,9 +1,0 @@
-{
-  "name": "webapp",
-  "version": "0.0.1",
-  "dependencies": {
-    "bootstrap": "latest",
-    "fancybox": "latest",
-    "requirejs": "latest"
-  }
-}
